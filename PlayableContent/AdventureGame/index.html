@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Adventure game</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="open-btn" onclick="openPopup()">Instructions</button>
+        <button id="restart_btn" onclick="restartGame()">New game</button>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+            <p>Moving on the map: <br> Write into the box where you want to go (north, south, east, west) or with the arrow keys. Your mission is to find and use items in the correct order, that you will be able to defeat the dragon. You can either pick up, use or drop items with the commands pick up, use and leave. You can also check what items you are carrying, by writing the command backpack. After acquiring the sword it is time to face the dragon...</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        
+            <button class="open-btn2" onclick="openPopup2()">For Henkka</button>
+            <div class="overlay2" id="overlay2"></div>
+            <div class="popup2" id="popup2">
+                <p1>Start (4). <br> Move to the forest (2), pick up the stone. <br> Move to the well (1), drop the stone, pick up the spellbook. <br> Move to the river (6), use the spellbook, pick up the flute. <br> Move to the tower (0), use the flute, pick up the magic potion. <br> Move to the cabin (8), use the magic potion, pick up the sword. <br> Move to the dragon (3), use the sword. <br> Move to the gate (5), it is open, move to east. <br> When moving through the gate, you fall into a ravine, player dies and the game is over.<br><br> There is an useless item (fairytale book) in the game, to confuse the player.</p1>
+                <img src="images/ruudukko.png" alt="ruudukko">
+                <button class="close-btn2" onclick="closePopup2()">Close</button>
+            </div>
+        </div>
+        <div class="container-inner">
+            <img id="image" alt="">
+            <input id="input" type="text" placeholder="Write your action here">
+            <button id="action_btn">Answer</button>
+            <p id="output" class="output"></p>
+            
+        </div>
+    </div>
+    <script src="js/script.js"></script>   
+</body>
+
+</html>

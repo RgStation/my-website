@@ -1,0 +1,40 @@
+Future projects that I want to include on my website, and in what form:
+
+
+2. Terrain
+- Perhaps several photos, as access to the game itself through the website could prove to be problematic
+- Compare development to 2D
+- Mentions of those that you can't tell just by looking at the photos
+    - Like the boat that is moving around in the lake
+    - The game idea itself, collecting items as fast as possible
+
+3. Alt Zone (Art)
+- All the art I make for the game
+- Starting from my Alt Zone specific looking
+- Some sort of cute one shot scene that contains as many furniture items as possible
+- Other pieces can be shown "at the side", if they do not fit the scene
+
+4. Roso Games (Other projects)
+- Both the og Roso Games project, but also the Spring 2026 Game Jam project
+- Screenshots of what it was about, and then text explaining what my role was in the game
+
+5. 3D - made for school
+- School projects need a folder for these
+- Maybe not the most basic pieces, but the more complex pieces that have taken time and effort to make
+
+6. Advanced Game development
+- 
+
+7. Web game platforms
+- 
+
+8. Photography
+- Show 3 photos in the gallery, but upon clicking any of them, it opens the pop up gallery with as many photos as I wanna put there
+
+9.
+
+
+
+ALREADY AT THE WEBSITE BUT NEED CHANGES:
+- Old school projects (from year 1) can be put in one folder, as they are just... well... filling the page
+- Instead of school projects, maybe rename it to something that I can use after graduation? Or add some text that makes clear what school I did all this for

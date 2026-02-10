@@ -1,0 +1,86 @@
+/* ABOUT ME */
+
+/*  #367A23 - darkest green
+    #4DAE32 - darker green
+    #B0E38E - lighter green
+    #E2FFD0 - very light green
+    #000000 - black
+    #B5B298 - lighter teupe
+    #998460 - darker teupe */
+
+body {
+    background-color: #B0E38E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 50px; 
+}
+
+.header {
+    background-image: url(../images/greenbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+}
+
+.nav ul {
+    color: black;
+    background-color: #b5b298;
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: normal;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 30px;
+    list-style: none;
+    background-image: linear-gradient(#000, green);
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.maincontent {
+    background-color: #e2ffd0;
+    padding: 10px 30px 30px 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    column-count: 2;
+    column-width: 100px;
+}
+
+.maincontent img {
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    display: block;
+    float: right;
+    padding: 20px 90px 30px 0;
+}
+
+.maincontent li {
+    list-style:square;
+    line-height: 1.5;
+}
+
+.maincontent p3 {
+    color: #367A23;
+}
+
+.footer {
+    color: white;
+    text-align: left;
+    background-image: linear-gradient(green, black);
+    padding: 10px 10px;
+
+}

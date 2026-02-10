@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pong Game</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left scoreboard -->
+    <div class="scoreboard">
+      <h2>Score</h2>
+      <p>Player: <span id="playerScore">0</span></p>
+      <p>Computer: <span id="computerScore">0</span></p>
+    </div>
+
+    <!-- Game area -->
+    <div class="game-area">
+      <canvas id="c" width="320" height="480"></canvas>
+      <button id="startBtn">Start Game</button>
+      <div id="countdown" class="hidden"></div>
+    </div>
+
+    <!-- Right Top 10 scoreboard -->
+    <div class="scoreboard top-scores">
+      <h2>Top 10 Scores</h2>
+      <ol id="topScoresList"></ol>
+    </div>
+  </div>
+
+  <!-- End game overlay -->
+  <div id="endMessage" class="end-message hidden">
+    <p id="endMessageText"></p>
+    <button id="closeEndMessage">OK</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

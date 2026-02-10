@@ -1,0 +1,72 @@
+/* Main game container */
+.container {
+    background-color: #009900;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    color: white;
+}
+
+/* Scoreboard container */
+.scoreboard {
+    background-color: gold;
+    color: #804000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    padding-bottom: 40px;
+}
+
+/* Answer button (#btn) */
+#btn {
+    background-color: palegreen; /* default color, change individually */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: #006600;
+}
+
+/* Replay button (#replay) */
+#replay {
+    background-color: #ffdab3; /* default color, can be changed individually */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: #cc7a00;
+}
+
+/* Body styling and centering */
+body {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+/* Output spacing */
+#output {
+    margin-bottom: 1rem;
+}
+
+#input {
+    background-color:#006600;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Top score list */
+#scoreList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

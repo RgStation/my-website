@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RgStation</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+    <link rel="stylesheet" href="css/skeleton5.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="header">
+        <h1></h1>
+        <p1></p1>
+    </div>
+    <div class="nav">
+        <a href="index.html"></a>
+        <ul>
+            <li id="front"><a href="index.html">Front page</a></li>
+            <li id="aboutme"><a href="index2.html">About me</a></li>
+            <li id="schoolprojects"><a href="index3.html">School projects</a></li>
+            <li id="otherprojects"><a href="index4.html">Other projects</a></li>
+            <li id="art"><a href="index5.html">Art</a></li>
+        </ul>
+
+        <br class="clearfloat">
+    </div>
+    <div class="maincontent">
+        <h2>Here are my more artsy projects and stuff</h2>
+        <div class="altzone">
+            <h3>ALT ZONE</h3>
+            <p>Make a folder here containing all the art I did for Alt Zone the game</p>
+        </div>
+            <div class="otherarts">
+            <h3>PHOTOGRAPHY</h3>
+
+            <div class="gallery">
+
+              <div class="gallery-item">
+                <img src="images/IMG_20160915_102401.jpg" alt="vuoksiview" width="300" height="150" class="lightbox-trigger">
+                <div class="desc">Vuoksi view</div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/IMG_20180512_132736.jpg" alt="river" width="300" height="150" class="lightbox-trigger">
+                <div class="desc">Kruununpuisto river</div>
+              </div>
+
+              <div class="gallery-item">
+                <img src="images/IMG_20180615_160115.jpg" alt="dam" width="300" height="150" class="lightbox-trigger">
+                <div class="desc">Upper dam of Vuoksi</div>
+              </div>
+
+            </div>
+        </div>
+     <div class="3D_art">
+            <h3>DIGGAAN SPRING 2025</h3>
+            <p>Photos have been majorly enhanced with canva, to create different vibes.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/IMG_1109.jpeg" alt="ovi" width="300" height="150" class="lightbox-trigger">
+                    <div class="desc">Door inside the hotel</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/valtsumustavalk.png" alt="hotelli" width="300" height="150" class="lightbox-trigger">
+                    <div class="desc">Valtionhotelli</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p4>
+            &copy; Ronja Gröhn 2026
+        </p4>
+    </div>
+    </div>
+
+    <div id="lightbox" class="lightbox hidden">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".lightbox-trigger").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.add("hidden");
+    }
+  });
+});
+</script>
+
+</body>
+
+</html>

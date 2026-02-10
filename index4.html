@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RgStation</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+    <link rel="stylesheet" href="css/skeleton4.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="header">
+        <h1></h1>
+        <p1></p1>
+    </div>
+    <div class="nav">
+        <a href="index.html"></a>
+        <ul>
+            <li id="front"><a href="index.html">Front page</a></li>
+            <li id="aboutme"><a href="index2.html">About me</a></li>
+            <li id="schoolprojects"><a href="index3.html">School projects</a></li>
+            <li id="otherprojects"><a href="index4.html">Other projects</a></li>
+            <li id="art"><a href="index5.html">Art</a></li>
+        </ul>
+        <br class="clearfloat">
+    </div>
+    <div class="maincontent">
+        <h2>Other projects I have participated in</h2>
+
+    <div class="roso">
+        <h3>ROSO GAMES 2025-2026</h3>
+        <p2>TBA, at the moment the name is Frozen time, and more shall be discovered later...</p>
+    </div>
+
+        <h3>GAME JAMS SPRING 2026</h3>
+        <div class="gallery">
+          <p>This is a game that we did while taking part in Game Jams. We had an amazing team of six people, consisting of artists and coders the like (and a person who did amazing sounds!). My own role in this game was to make the runes shown in the game, and otherwise participating in the game development process.<br>You can go and download the game by clicking the link <a href= https://globalgamejam.org/games/2026/mask-iku-turso-3 target="_blank">here</a> (the website opens in a new tab).</p>
+
+            <div class="gallery-item">
+              <img src="images/runelist.png" alt="runelist" width="300" height="150" class="lightbox-trigger">
+              <div class="desc">List of runes</div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="images/ikuturso.png" alt="maskofikuturso" width="300" height="150" class="lightbox-trigger">
+              <div class="desc">The Mask of Iku-Turso</div>
+            </div>
+
+              <div class="gallery-item">
+                <img src="images/Roso Games.png" alt="riimut" width="300" height="150" class="lightbox-trigger">
+                <div class="desc">Example runes</div>
+              </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p4>
+            &copy; Ronja Gröhn 2026
+        </p4>
+    </div>
+    </div>
+
+
+    <div id="lightbox" class="lightbox hidden">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".lightbox-trigger").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.add("hidden");
+    }
+  });
+});
+</script>
+</body>
+
+</html>
