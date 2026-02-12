@@ -552,6 +552,7 @@ div.gallery-item img {
 div.gallery-item div.desc {
   padding: 15px;
   text-align: center;
+  background-color: #0f4d0a;
 }
 
 .lightbox {
