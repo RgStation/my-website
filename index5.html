@@ -40,19 +40,19 @@
 
             <div class="gallery">
 
-              <div class="gallery-item">
-                <img src="images/IMG_20160915_102401.jpg" alt="vuoksiview" width="300" height="150" class="lightbox-trigger">
+              <div class="gallery-item" onclick="openLightbox('randos')">
+                <img src="images/IMG_20160915_102401.jpg" alt="vuoksiview" width="300" height="150" class="lightbox-trigger" data-project="randos" data-index="0">
                 <div class="desc">Vuoksi view</div>
               </div>
 
               <div class="gallery-item">
-                <img src="images/IMG_20180512_132736.jpg" alt="river" width="300" height="150" class="lightbox-trigger">
-                <div class="desc">Kruununpuisto river</div>
+                <img src="" alt="" width="300" height="150" class="lightbox-trigger">
+                <div class="desc"></div>
               </div>
 
               <div class="gallery-item">
-                <img src="images/IMG_20180615_160115.jpg" alt="dam" width="300" height="150" class="lightbox-trigger">
-                <div class="desc">Upper dam of Vuoksi</div>
+                <img src="" alt="" width="300" height="150" class="lightbox-trigger">
+                <div class="desc"></div>
               </div>
 
             </div>
@@ -100,6 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
     2026: [
         "images/talvioviedit.jpg"
     ],
+
+    randos: [
+        "images/IMG_20160915_102401.jpg",
+        "images/IMG_20180512_132736.jpg",
+        "images/IMG_20180615_160115.jpg"
+    ]
 
   };
 
