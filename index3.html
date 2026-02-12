@@ -45,19 +45,28 @@
 
       <div class="gallery">
 <!-- Add the possibility to see the pop up photo on top of the link opening thing -->
-        <div class="gallery-item" onclick="openLightbox('pong')">
-          <img src="images/pongpho.png" alt="pong" width="300" height="150" class="lightbox-trigger" data-project="pong" data-index="0">
-          <div class="desc"><a href="PlayableContent/Pong/index.html" target="_blank" rel="noopener" class="text-link">Pong</a></div>
+        <div class="gallery-item">
+
+          <!-- Open photo -->
+          <img src="images/pongpho.png" alt="Pong" class="lightbox-trigger" data-project="pong" data-index="0">
+
+          <!-- Open game in new tab -->
+          <div class="desc">
+            <a href="PlayableContent/Pong/index.html" target="_blank" rel="noopener" class="project-link">Pong</a>
+          </div>
+        </div>
+
+
+        <div class="gallery-item">
+          <img src="images/guessgamepho.png" alt="guessinggame" class="lightbox-trigger" data-project="guessinggame" data-index="0">
+          <div class="desc">
+            <a href="PlayableContent/GuessingGame/index.html" target="_blank" rel="noopener" class="text-link">Guessing game</a></div>
         </div>
 
         <div class="gallery-item">
-          <img src="images/guessgamepho.png" alt="guessinggame" width="300" height="150" class="lightbox-trigger" data-project="guessinggame" data-index="0">
-          <div class="desc"><a href="PlayableContent/GuessingGame/index.html" target="_blank" rel="noopener" class="text-link"></a></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/advgamepho.png" alt="adventure" width="300" height="150" class="lightbox-trigger" data-project="adventure" data-index="0">
-          <div class="desc"><a href="PlayableContent/AdventureGame/index.html" target="_blank" rel="noopener" class="text-link"></a></div>
+          <img src="images/advgamepho.png" alt="adventure" class="lightbox-trigger" data-project="adventure" data-index="0">
+          <div class="desc">
+            <a href="PlayableContent/AdventureGame/index.html" target="_blank" rel="noopener" class="text-link">Adventure game</a></div>
         </div>
 
       </div>
@@ -84,18 +93,18 @@
 
         <div class="gallery">
 
-            <div class="gallery-item" onclick="openLightbox('horticulture')">
-                    <img src="images/Näyttökuva 2024-12-16 kello 13.26.50.png" alt="horticulture" width="300" height="150" class="lightbox-trigger" data-project="horticulture" data-index="0">
+          <div class="gallery-item" onclick="openLightbox('horticulture')">
+            <img src="images/Näyttökuva 2024-12-16 kello 13.26.50.png" alt="horticulture" class="lightbox-trigger" data-project="horticulture" data-index="0">
             <div class="desc">One of the first practises</div>
             </div>
 
             <div class="gallery-item">
-                    <img src="images/Näyttökuva 2024-12-16 kello 13.27.11.png" alt="pleasantville" width="300" height="150" class="lightbox-trigger" data-project="pleasantville" data-index="0">
+              <img src="images/Näyttökuva 2024-12-16 kello 13.27.11.png" alt="pleasantville" class="lightbox-trigger" data-project="pleasantville" data-index="0">
             <div class="desc">Pleasantville (responsive)</div>
             </div>
 
             <div class="gallery-item">
-                    <img src="images/Näyttökuva 2024-12-17 kello 20.33.50.png" alt="saas" width="300" height="150" class="lightbox-trigger" data-project="saas" data-index="0">
+                    <img src="images/Näyttökuva 2024-12-17 kello 20.33.50.png" alt="saas" class="lightbox-trigger" data-project="saas" data-index="0">
             <div class="desc">Saas practice + hamburger menu</div>
             </div>
 
@@ -107,12 +116,12 @@
         <div class="gallery">
 
             <div class="gallery-item" onclick="openLightbox('meteorites')">
-                    <img src="images/meteorites.png" alt="meteorites" width="300" height="150" class="lightbox-trigger" data-project="meteorites" data-index="0">
+                    <img src="images/meteorites.png" alt="meteorites" class="lightbox-trigger" data-project="meteorites" data-index="0">
             <div class="desc">Meteorites on the map</div>
             </div>
 
             <div class="gallery-item">
-                    <img src="images/charjs.png" alt="charjs" width="300" height="150" class="lightbox-trigger". data-project="charjs" data-index="0">
+                    <img src="images/charjs.png" alt="charjs" class="lightbox-trigger". data-project="charjs" data-index="0">
             <div class="desc">Chart.js harjoitus</div>
             </div>
 
@@ -159,6 +168,38 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/Näyttökuva 2026-02-10 kello 12.51.04.png",
       "images/Näyttökuva 2026-02-10 kello 12.51.16.png",
       "images/Näyttökuva 2026-02-10 kello 12.52.02.png"
+    ],
+
+    pong: [
+      "images/pongpho.png"
+    ],
+
+    guessinggame: [
+      "images/guessgamepho.png"
+    ],
+
+    adventure: [
+      "images/advgamepho.png"
+    ],
+
+    horticulture: [
+      "images/Näyttökuva 2024-12-16 kello 13.26.50.png"
+    ],
+
+    pleasantville: [
+      "images/Näyttökuva 2024-12-16 kello 13.27.11.png"
+    ],
+
+    saas: [
+      "images/Näyttökuva 2024-12-17 kello 20.33.50.png"
+    ],
+
+    meteorites: [
+      "images/meteorites.png"
+    ],
+
+    charjs: [
+      "images/charjs.png"
     ]
 
   };
