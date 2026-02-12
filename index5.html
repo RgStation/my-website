@@ -58,17 +58,17 @@
             </div>
         </div>
      <div class="3D_art">
-            <h3>DIGGAAN 2025 & 2026</h3>
+            <h3>DIGGAAN</h3>
             <p>Photos have been majorly enhanced with canva, to create different vibes.</p>
             <div class="gallery">
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox('2025')">
                     <img src="images/IMG_1109.jpeg" alt="ovi" width="300" height="150" class="lightbox-trigger">
-                    <div class="desc">Door inside the hotel</div>
+                    <div class="desc">2025</div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="images/valtsumustavalk.png" alt="hotelli" width="300" height="150" class="lightbox-trigger">
-                    <div class="desc">Valtionhotelli</div>
+                <div class="gallery-item" onclick="openLightbox('2026')">
+                    <img src="" alt="hotelli" width="300" height="150" class="lightbox-trigger">
+                    <div class="desc">2026</div>
                 </div>
             </div>
         </div>
@@ -81,21 +81,63 @@
     </div>
     </div>
 
-    <div id="lightbox" class="lightbox hidden">
-  <span class="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="">
+   <div id="lightbox" class="lightbox hidden">
+    <span class="lightbox-close">&times;</span>
+    <button class="prev">‹</button>
+    <img id="lightbox-img" src="">
+    <button class="next">›</button>
+  </div>
 
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", () => {
+
+  const projects = {
+    2025: [
+      "images/IMG_1109.png",
+      "images/valtsumustavalk.png"
+    ],
+
+    2026: [
+
+    ]
+
+  };
+
+  let currentProject = [];
+  let currentIndex = 0;
+
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
+
   const closeBtn = document.querySelector(".lightbox-close");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
 
   document.querySelectorAll(".lightbox-trigger").forEach(img => {
     img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
+      const projectName = img.dataset.project;
+      currentProject = projects[projectName];
+      currentIndex = parseInt(img.dataset.index);
+
+      showImage();
       lightbox.classList.remove("hidden");
     });
+  });
+
+  function showImage() {
+    lightboxImg.src = currentProject[currentIndex];
+  }
+
+  prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + currentProject.length) % currentProject.length;
+    showImage();
+  });
+
+  nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % currentProject.length;
+    showImage();
   });
 
   closeBtn.addEventListener("click", () => {
@@ -107,6 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.classList.add("hidden");
     }
   });
+
 });
 </script>
 
