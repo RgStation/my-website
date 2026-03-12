@@ -513,6 +513,7 @@ div.gallery-item {
 
 div.gallery-item:hover {
   border: 1px solid orange;
+  color: orange;
 }
 
 div.gallery-item img {
